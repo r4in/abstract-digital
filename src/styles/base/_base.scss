@@ -1,0 +1,17 @@
+// Styles the root and body elements
+::selection {
+  color: var(--color-white);
+  background-color: var(--color-brandLight, var(--color-secondary));
+  -webkit-text-fill-color: var(--color-white);
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg);
+  position: relative;
+}

@@ -1,0 +1,22 @@
+#ourProcessProcess {
+  margin: 9.375rem auto;
+
+  .process {
+    &__h3 {
+      @extend .text-white;
+      font-weight: 600;
+      margin: 0.625rem 0 1.875rem;
+    }
+
+    &__p {
+      @extend .text-body1;
+      @extend .text-white;
+      margin-top: 2.5rem;
+    }
+
+    &__h4 {
+      @extend .text-white;
+      margin: 0 0 1.625rem;
+    }
+  }
+}

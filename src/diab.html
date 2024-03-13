@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Diet In A Box | Abstract Digital</title>
+    <meta
+      name="description"
+      content="Redesigning how people perceive healthy meals"
+    />
+    <meta itemprop="name" content="Diet In A Box | Abstract Digital" />
+    <meta
+      itemprop="description"
+      content="Redesigning how people perceive healthy meals"
+    />
+    <meta
+      itemprop="image"
+      content="https://www.abstract.ph/${require('./images/seo/diab.png')}"
+    />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@abstractdigitalph" />
+    <meta name="twitter:title" content="Diet In A Box | Abstract Digital" />
+    <meta
+      name="twitter:description"
+      content="Redesigning how people perceive healthy meals"
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://www.abstract.ph/${require('./images/seo/diab.png')}"
+    />
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Diet In A Box | Abstract Digital" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.abstract.ph/" />
+    <meta
+      property="og:image"
+      content="https://www.abstract.ph/${require('./images/seo/diab.png')}"
+    />
+    <meta
+      property="og:description"
+      content="Redesigning how people perceive healthy meals"
+    />
+    <meta property="og:site_name" content="Abstract Digital" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-167307387-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-167307387-1");
+    </script>
+  </head>
+  <body>
+    <!-- Overlay -->
+    <aside class="overlay">
+      <div class="overlay__sides overlay__sides--left">
+        <img
+          src="images/logo.svg"
+          alt="Abstract Logo"
+          class="overlay__logo--landing"
+        />
+        <a href="/" class="overlay__logo">
+          <img src="images/logo.svg" alt="Abstract Logo" />
+        </a>
+        <button
+          type="button"
+          aria-label="Menu"
+          aria-controls="navigation"
+          aria-expanded="false"
+          class="hamburger"
+        >
+          <div class="hamburger__container">
+            <div class="hamburger__bar--top"></div>
+            <div class="hamburger__bar--middle"></div>
+            <div class="hamburger__bar--bottom"></div>
+          </div>
+        </button>
+        <a
+          href="https://dribbble.com/abstractdigitalph"
+          class="overlay__dribbble"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 0.375C5.58994 0.375 0.375 5.58994 0.375 12C0.375 18.4101 5.58994 23.625 12 23.625C18.4101 23.625 23.625 18.4101 23.625 12C23.625 5.58994 18.4101 0.375 12 0.375ZM19.6861 5.73591C21.069 7.42556 21.9065 9.57764 21.9284 11.9213C21.601 11.8521 18.3181 11.1862 15.0142 11.6017C14.7446 10.9435 14.4901 10.3645 14.1415 9.65105C17.8128 8.15213 19.4767 6.01908 19.6861 5.73591ZM18.5822 4.58766C18.4036 4.84205 16.9089 6.85106 13.3781 8.17448C11.751 5.18498 9.94758 2.72911 9.67313 2.36161C12.822 1.60256 16.1403 2.42114 18.5822 4.58766ZM7.77848 3.02906C8.04028 3.38808 9.81464 5.847 11.4599 8.77167C6.8152 10.0051 2.72428 9.98733 2.28019 9.98147C2.92406 6.90023 5.00053 4.33936 7.77848 3.02906ZM2.07047 12.0151C2.07047 11.9136 2.07248 11.8125 2.07553 11.7117C2.50997 11.7206 7.32178 11.7826 12.2805 10.2986C12.5648 10.8549 12.8363 11.4196 13.0855 11.9837C9.49495 12.9951 6.23269 15.8991 4.62314 18.6543C3.03722 16.894 2.07047 14.5655 2.07047 12.0151ZM5.90517 19.8486C6.94237 17.7283 9.75727 14.9913 13.7604 13.6256C15.1545 17.2483 15.731 20.2844 15.8787 21.1555C12.6859 22.5155 8.84672 22.1424 5.90517 19.8486ZM17.548 20.2465C17.4462 19.6425 16.9177 16.7357 15.619 13.1668C18.7305 12.6687 21.4643 13.4841 21.804 13.5913C21.3614 16.3541 19.7756 18.7402 17.548 20.2465Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="overlay__sides overlay__sides--right">
+        <button class="overlay__hire contact__trigger">
+          <span class="overlay__hireText">Hire Us</span>
+        </button>
+        <div class="overlay__scrollbar">
+          <div class="overlay__active">
+            <div class="overlay__pageNumber">
+              <div class="overlay__pageNumber--left">
+                <span><br />F</span>
+              </div>
+              <div class="overlay__pageNumber--middle">
+                <span>0</span>
+                <span>I</span>
+              </div>
+              <div class="overlay__pageNumber--right">
+                <span>0</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>N</span>
+              </div>
+            </div>
+            <div class="overlay__activeBar"></div>
+          </div>
+          <div class="overlay__bar"></div>
+          <div class="overlay__hitboxes">
+            <div class="overlay__hitbox"></div>
+            <div class="overlay__hitbox"></div>
+            <div class="overlay__hitbox"></div>
+            <div class="overlay__hitbox"></div>
+            <div class="overlay__hitbox"></div>
+            <div class="overlay__hitbox"></div>
+            <div class="overlay__hitbox"></div>
+            <div class="overlay__hitbox"></div>
+            <div class="overlay__hitbox"></div>
+          </div>
+        </div>
+        <div class="overlay__scroll">
+          <div class="overlay__textHolder">
+            <span class="overlay__text">Scroll Down</span>
+            <span class="overlay__text--backToTop">Back to Top</span>
+          </div>
+          <img
+            src="images/arrowDown.svg"
+            alt="Arrow down"
+            class="overlay__arrow"
+          />
+        </div>
+      </div>
+    </aside>
+    <nav class="mainNav">
+      <div class="container mainNav__container">
+        <div class="row">
+          <div class="col-xs-offset-1 col-xs-5 mainNav__left">
+            <a href="/" class="mainNav__link--main">Home</a>
+            <a href="/our-work.html" class="mainNav__link--main">Work</a>
+            <a href="/our-process.html" class="mainNav__link--main">Process</a>
+            <a
+              href="/about-us.html"
+              class="mainNav__link--main mainNav__link--last"
+              >About</a
+            >
+            <button
+              class="button button--nav contact__trigger"
+              data-from-menu="true"
+            >
+              Start A Project With Us
+              <svg
+                width="31"
+                height="12"
+                viewBox="0 0 31 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="button__image"
+              >
+                <path
+                  d="M1 6H30"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M24.5 1L30 6L24.5 11"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="col-xs-offset-2 col-xs-2 mainNav__right">
+            <hr class="break--small" />
+            <a
+              href="https://dribbble.com/abstractdigitalph"
+              class="mainNav__link--socmed"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Dribbble</a
+            >
+            <a
+              href="https://medium.com/@abstractdigitalph"
+              class="mainNav__link--socmed"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Medium</a
+            >
+            <a
+              href="https://www.facebook.com/abstractdigitalph/"
+              class="mainNav__link--socmed"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+            <a
+              href="https://www.instagram.com/abstractdigitalph"
+              class="mainNav__link--socmed"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main data-router-wrapper>
+      <div
+        id="projects"
+        class="brand-diab smoothScroll__height--diab"
+        data-router-view="diab"
+      >
+        <div class="smoothScroll__wrapper">
+          <div class="smoothScroll__container smoothScroll__container--diab">
+            <!-- Hero -->
+            <section id="projectsLanding">
+              <h1 class="projects__h1 onEnter__h1--diab" data-depth="15">
+                Diet In A Box
+              </h1>
+              <span class="projects__label onEnter__label--diab" data-depth="12"
+                >Cloud Kitchen</span
+              >
+              <div class="projects__images">
+                <div class="projects__imageHolder">
+                  <img
+                    srcset="
+                      images/projects/diab/hero/1.png,
+                      images/projects/diab/hero/1@2x.png 2x
+                    "
+                    src="images/projects/diab/hero/1@2x.png"
+                    alt="Tomato"
+                    loading="lazy"
+                    class="projects__image--diab1 onEnter__image--diab3"
+                    data-depth="5"
+                  />
+                  <img
+                    srcset="
+                      images/projects/diab/hero/2.png,
+                      images/projects/diab/hero/2@2x.png 2x
+                    "
+                    src="images/projects/diab/hero/2@2x.png"
+                    alt="Laptop with Diet In A Box Website"
+                    loading="lazy"
+                    class="projects__image--diab2 onEnter__image--diab1"
+                    data-depth="10"
+                  />
+                  <img
+                    srcset="
+                      images/projects/diab/hero/3.png,
+                      images/projects/diab/hero/3@2x.png 2x
+                    "
+                    src="images/projects/diab/hero/3@2x.png"
+                    alt="Letter D with images of food as fill"
+                    loading="lazy"
+                    class="projects__image--diab3 onEnter__letter--diab"
+                    data-depth="-5"
+                  />
+                  <img
+                    srcset="
+                      images/projects/diab/hero/4.png,
+                      images/projects/diab/hero/4@2x.png 2x
+                    "
+                    src="images/projects/diab/hero/4@2x.png"
+                    alt="Chef's Hat"
+                    loading="lazy"
+                    class="projects__image--diab4 onEnter__image--diab2"
+                    data-depth="2"
+                  />
+                </div>
+                <hr class="projects__line onEnter__line--diab" />
+                <div class="lottie__hero--diab" data-depth="-15"></div>
+              </div>
+            </section>
+
+            <article id="projectsChallenge">
+              <section class="container">
+                <div class="row">
+                  <div class="col-xs-offset-1 col-xs-6">
+                    <span class="text-label text-lineBefore text-white20"
+                      >The Challenge</span
+                    >
+                    <h2 class="challenge__h2">
+                      Redesigning How People Perceive Healthy Meals
+                    </h2>
+                    <hr class="break" />
+                    <p class="challenge__p">
+                      “Healthy meals can also be delicious!” – this is Chime’s
+                      purposeful mantra that aims to inspire every single
+                      Cebuano, to switch to a healthier way of eating.
+                    </p>
+                  </div>
+                  <div class="col-xs-offset-1 col-xs-3">
+                    <span class="text-label text-white20">
+                      Client
+                    </span>
+                    <p class="challenge__clientInfo">
+                      Diet In A Box
+                    </p>
+
+                    <span class="text-label text-white20">
+                      Location
+                    </span>
+                    <p class="challenge__clientInfo">
+                      Philippines
+                    </p>
+
+                    <span class="text-label text-white20">
+                      Year
+                    </span>
+                    <p class="challenge__clientInfo">
+                      2019
+                    </p>
+
+                    <span class="text-label text-white20">
+                      Services
+                    </span>
+                    <ul class="challenge__clientList">
+                      <li>UI/UX</li>
+                      <li>Development</li>
+                      <li>Photography</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section class="challenge__images">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-xs-offset-1 col-xs-10 challenge__imageHolder"
+                    >
+                      <img
+                        srcset="
+                          images/projects/diab/challenge/1.png,
+                          images/projects/diab/challenge/1@2x.png 2x
+                        "
+                        src="images/projects/diab/challenge/1@2x.png"
+                        alt="Placeholder for Video"
+                        loading="lazy"
+                        class="challenge__image challenge__image--diab1"
+                        data-depth="10"
+                      />
+                      <img
+                        srcset="
+                          images/projects/diab/challenge/2.png,
+                          images/projects/diab/challenge/2@2x.png 2x
+                        "
+                        src="images/projects/diab/challenge/2@2x.png"
+                        alt="Person ordering a meal from the website"
+                        loading="lazy"
+                        class="challenge__image challenge__image--diab2"
+                        data-depth="5"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="challenge__blurb">
+                <div class="container">
+                  <div class="row">
+                    <div
+                      class="col-xs-offset-2 col-xs-8 challenge__blurbHolder"
+                    >
+                      <p class="text-body2 text-white">
+                        Diet in a Box is even featured in top local magazines
+                        such as Sunstar Weekend, Zee Lifestyle and even on MagTV
+                        Cebu. While bagging awards such as the Best of Cebu’s -
+                        “Best Wellness Food Delivery”, since 2016.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </article>
+
+            <article id="projectsProcess">
+              <section class="container">
+                <div class="row">
+                  <div class="col-xs-offset-1 col-xs-4">
+                    <span class="text-label text-lineBefore text-white20"
+                      >The Process</span
+                    >
+                    <h3 class="process__h3">
+                      Redesigning a specific feature of a platform
+                    </h3>
+                    <hr class="break" />
+                  </div>
+                  <div class="col-xs-offset-1 col-xs-5">
+                    <h4 class="process__h4">
+                      How might we improve the customer experience of ordering
+                      food?
+                    </h4>
+                    <p class="text-body1 text-white">
+                      Chime knew that the old platform needs a total revamp. But
+                      where do we start?
+                    </p>
+                    <p class="text-body1 text-white">
+                      The team performed an innovation workshop in order to
+                      understand the goals and intent of the redesign. We then
+                      selected a design direction to implement and test.
+                    </p>
+                  </div>
+                </div>
+                <div class="process__images">
+                  <img
+                    srcset="
+                      images/projects/diab/process/1.png,
+                      images/projects/diab/process/1@2x.png 2x
+                    "
+                    src="images/projects/diab/process/1@2x.png"
+                    alt="People working together to solve the problem"
+                    loading="lazy"
+                    class="process__image process__image--low"
+                    data-depth="5"
+                  />
+                  <img
+                    srcset="
+                      images/projects/diab/process/2.png,
+                      images/projects/diab/process/2@2x.png 2x
+                    "
+                    src="images/projects/diab/process/2@2x.png"
+                    alt="Wireframes of the proposed site"
+                    loading="lazy"
+                    class="process__image process__image--lowest"
+                    data-depth="3"
+                  />
+                  <img
+                    srcset="
+                      images/projects/diab/process/3.png,
+                      images/projects/diab/process/3@2x.png 2x
+                    "
+                    src="images/projects/diab/process/3@2x.png"
+                    alt="Person sipping coffee while working"
+                    loading="lazy"
+                    class="process__image"
+                    data-depth="7"
+                  />
+                </div>
+              </section>
+            </article>
+
+            <article id="projectsResults">
+              <section class="container">
+                <div class="row">
+                  <div class="col-xs-offset-1 col-xs-4">
+                    <span class="text-label text-lineBefore text-white20"
+                      >The Result</span
+                    >
+                    <h3 class="results__h3">
+                      An intuitive mobile app
+                    </h3>
+                    <hr class="break" />
+                  </div>
+                  <div class="col-xs-offset-1 col-xs-5">
+                    <h4 class="results__h4">
+                      A seamless integration results for both customers &
+                      coffeeshop operations
+                    </h4>
+                    <p class="text-body1 text-white">
+                      It’s is an out-of-the-box business spending solution that
+                      offers smart payment cards for employees.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-offset-1 col-xs-10 results__images">
+                    <h5 class="results__h5">Landing Page</h5>
+                    <img
+                      srcset="
+                        images/projects/diab/result/1.png,
+                        images/projects/diab/result/1@2x.png 2x
+                      "
+                      src="images/projects/diab/result/1@2x.png"
+                      alt="Website Header"
+                      loading="lazy"
+                      class="results__image--diab1"
+                    />
+                    <img
+                      srcset="
+                        images/projects/diab/result/2.png,
+                        images/projects/diab/result/2@2x.png 2x
+                      "
+                      src="images/projects/diab/result/2@2x.png"
+                      alt="Menu Section of the Website"
+                      loading="lazy"
+                      class="results__image--diab2"
+                    />
+                    <img
+                      srcset="
+                        images/projects/diab/result/3.png,
+                        images/projects/diab/result/3@2x.png 2x
+                      "
+                      src="images/projects/diab/result/3@2x.png"
+                      alt="Order Page"
+                      loading="lazy"
+                      class="results__image--diab3"
+                    />
+
+                    <h5 class="results__h5">Food Photography</h5>
+                    <div class="results__imageGroup--diab">
+                      <div class="results__imageGroup--half">
+                        <img
+                          srcset="
+                            images/projects/diab/result/4.png,
+                            images/projects/diab/result/4@2x.png 2x
+                          "
+                          src="images/projects/diab/result/4@2x.png"
+                          alt="Chicken Salad"
+                          loading="lazy"
+                          class="results__image--diab4"
+                        />
+                        <img
+                          srcset="
+                            images/projects/diab/result/5.png,
+                            images/projects/diab/result/5@2x.png 2x
+                          "
+                          src="images/projects/diab/result/5@2x.png"
+                          alt="Chicken with Lemon and Vegetables"
+                          loading="lazy"
+                          class="results__image--diab5"
+                        />
+                        <img
+                          srcset="
+                            images/projects/diab/result/6.png,
+                            images/projects/diab/result/6@2x.png 2x
+                          "
+                          src="images/projects/diab/result/6@2x.png"
+                          alt="Beef in Soup with Eggs"
+                          loading="lazy"
+                          class="results__image--diab6"
+                        />
+                      </div>
+                      <div class="results__imageGroup--half">
+                        <img
+                          srcset="
+                            images/projects/diab/result/7.png,
+                            images/projects/diab/result/7@2x.png 2x
+                          "
+                          src="images/projects/diab/result/7@2x.png"
+                          alt="Salad with tomatoes and nuts"
+                          loading="lazy"
+                          class="results__image--diab7"
+                        />
+                        <img
+                          srcset="
+                            images/projects/diab/result/8.png,
+                            images/projects/diab/result/8@2x.png 2x
+                          "
+                          src="images/projects/diab/result/8@2x.png"
+                          alt="Salad with beans, tomatoes and limes"
+                          loading="lazy"
+                          class="results__image--diab8"
+                        />
+                        <img
+                          srcset="
+                            images/projects/diab/result/9.png,
+                            images/projects/diab/result/9@2x.png 2x
+                          "
+                          src="images/projects/diab/result/9@2x.png"
+                          alt="Chicken salad with cucumber and nutes"
+                          loading="lazy"
+                          class="results__image--diab9"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </article>
+
+            <footer class="brand-abstract">
+              <section id="projectsNav">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-offset-1 col-xs-10 nav__holder">
+                      <a
+                        href="tightrope.html"
+                        class="nav brand-tightrope button__hover"
+                      >
+                        <span class="text-brand text-label">
+                          Back to
+                        </span>
+                        <h2 class="nav__h2">Tightrope Coffee</h2>
+                        <button class="button button--white40">
+                          <svg
+                            width="31"
+                            height="12"
+                            viewBox="0 0 31 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="button__image button__image--reversed"
+                          >
+                            <path
+                              d="M1 6H30"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M24.5 1L30 6L24.5 11"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          Check it out
+                        </button>
+                      </a>
+
+                      <a
+                        href="flash.html"
+                        class="nav brand-flash button__hover"
+                      >
+                        <span class="text-brand text-label">
+                          Up Next
+                        </span>
+                        <h2 class="nav__h2">Flash Coffee</h2>
+                        <button class="button button--white40">
+                          Check it out
+                          <svg
+                            width="31"
+                            height="12"
+                            viewBox="0 0 31 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="button__image"
+                          >
+                            <path
+                              d="M1 6H30"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M24.5 1L30 6L24.5 11"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="nextStop">
+                <a href="our-process.html" class="nextStop__link">
+                  <span class="nextStop__label">Next Stop</span>
+                  <h1 class="nextStop__h1">Our Process</h1>
+                </a>
+              </section>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-offset-1 col-xs-4">
+            <span class="text-label text-lineBefore text-white20">
+              Your Search is Over
+            </span>
+            <h2 class="contact__h2">Let's Build Great Products Together</h2>
+            <hr class="break" />
+            <p class="contact__p">
+              Ready to talk? Schedule a 15 minute free consultation from us – at
+              no charge at all.
+            </p>
+            <a
+              href="https://meetings.hubspot.com/george285"
+              class="filledButton"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="text-button2 text-white"
+                >Book A Free Consulation</span
+              >
+            </a>
+          </div>
+          <div class="col-xs-offset-1 col-xs-4">
+            <div class="footer__contactInfo">
+              <a href="mailto: hello@abstract.ph" class="footer__link">
+                <h5 class="footer__contact">
+                  hello@abstract.ph
+                </h5>
+              </a>
+              <span class="text-contact text-white60">
+                We love our inbox – drop us an email.
+              </span>
+            </div>
+
+            <div class="footer__contactInfo">
+              <a href="tel: +63 998 544 4728" class="footer__link">
+                <h5 class="footer__contact">
+                  +63 998 544 4728
+                </h5>
+                <span class="text-contact text-white60">
+                  Call George, his line is open 24/7
+                </span>
+              </a>
+            </div>
+
+            <div class="footer__contactInfo">
+              <a
+                href="https://google.com/search?q=abstractdigitalph"
+                class="footer__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h5 class="footer__contact">
+                  @abstractdigitalph
+                </h5>
+              </a>
+              <span class="text-contact text-white60">
+                Stalking us? Use this handle to find us on the interwebs.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="viewport">
+      <div class="viewport__container">
+        <span class="text-label text-white"
+          >Make your browser window wider</span
+        >
+        <h1 class="viewport__h1">too small</h1>
+        <img src="images/overlay/increase.svg" class="viewport__img" />
+        <p class="text-body1 text-white75">
+          C’mon, don’t be shy. Stretch that browser window wider. But if you
+          really want to visit this site in this view size, then just use your
+          mobile device.
+        </p>
+        <hr class="break--gradient" />
+      </div>
+    </aside>
+    <aside class="transition">
+      <div class="transition__main"></div>
+    </aside>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+.footer {
+  &__holder {
+    border: solid 0.0625rem var(--color-border);
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__half {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    &--left {
+      @extend .footer__half;
+      border-right: solid 0.0625rem var(--color-border);
+    }
+
+    &--leftFlex {
+      @extend .footer__half--left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &--right {
+      @extend .footer__half;
+      padding: 2.5rem;
+    }
+
+    &--leftFull {
+      width: 50%;
+      padding: 2.5rem;
+      margin: auto 0;
+
+      border-right: solid 0.0625rem var(--color-border);
+    }
+  }
+
+  &__top {
+    padding: 2.5rem;
+  }
+
+  &__bottom {
+    @include breakpoint-down("lg") {
+      height: 32%;
+    }
+  }
+
+  &__rightTop {
+    padding: 2.5rem;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @include breakpoint("xl") {
+      height: auto;
+    }
+  }
+
+  &__rightBottom {
+    height: 100%;
+
+    border-top: solid 0.0625rem var(--color-border);
+    padding: 2.5rem;
+    display: none;
+
+    @include breakpoint("xl") {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__whole {
+    border-top: solid 0.0625rem var(--color-border);
+    width: 100%;
+    padding: 2.5rem;
+
+    display: flex;
+    justify-content: space-around;
+
+    @include breakpoint("xl") {
+      display: none;
+    }
+  }
+
+  &__link {
+    @extend .text-white;
+    text-decoration: none;
+    transition: color 0.1s ease-in-out;
+    margin: 0.5rem 0;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-secondary);
+    }
+  }
+
+  &__h1 {
+    @extend .text-white;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.5rem;
+  }
+
+  &__h3 {
+    @extend .text-gradient;
+    margin: 0 0 2.5rem;
+  }
+
+  &__h4 {
+    @extend .text-white;
+    margin: 0 0 3rem;
+    font-size: 1.85rem;
+    @include breakpoint("xl") {
+      margin: 0 0 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
+  &__image {
+    width: 100%;
+    @include breakpoint-down("lg") {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__contactInfo {
+    margin-bottom: 2.5rem;
+  }
+
+  &__contact {
+    margin-bottom: 0.625rem;
+    &--sub {
+      margin: 0;
+    }
+  }
+
+  &__disclaimer {
+    @extend .text-start;
+    @extend .text-primary;
+    @include breakpoint("xl") {
+      margin-top: 0;
+    }
+    margin-top: 1rem;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint("lg") {
+      display: block;
+    }
+  }
+
+  &__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+    margin-right: 1.875rem;
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+
+    path {
+      transition: fill 0.1s ease-in-out;
+    }
+
+    &:active {
+      outline: none;
+
+      path {
+        fill: var(--color-secondary);
+      }
+    }
+
+    &--dribbble {
+      @extend .footer__icon;
+      &:hover,
+      &:focus {
+        path {
+          fill: #ea4c89;
+        }
+      }
+    }
+
+    &--insta {
+      @extend .footer__icon;
+      &:hover,
+      &:focus {
+        path {
+          fill: #f10176;
+        }
+      }
+    }
+
+    &--fb {
+      @extend .footer__icon;
+      &:hover,
+      &:focus {
+        path {
+          fill: #4267b2;
+        }
+      }
+    }
+
+    &--github {
+      @extend .footer__icon;
+      margin-right: 0;
+      &:hover,
+      &:focus {
+        path {
+          fill: var(--color-white75);
+        }
+      }
+    }
+
+    &--medium {
+      @extend .footer__icon;
+      &:hover,
+      &:focus {
+        path {
+          fill: #e8f3ec;
+        }
+      }
+    }
+  }
+}

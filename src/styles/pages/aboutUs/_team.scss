@@ -1,0 +1,35 @@
+#aboutUsTeam {
+  .team {
+    margin-bottom: 3.75rem;
+    &__h2 {
+      @extend .text-white;
+      margin: 1.25rem 0 0;
+    }
+  }
+
+  .images {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5.625rem;
+
+    &__image {
+      &--1 {
+        width: calc(52% - 1.25rem);
+        border-radius: 0.5rem;
+      }
+
+      &--2 {
+        width: calc(28% - 1.25rem);
+        margin-top: 9.375rem;
+        border-radius: 0.5rem;
+      }
+
+      &--3 {
+        width: calc(20% - 1.25rem);
+        margin-top: 4.375rem;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.viewport {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-bg);
+
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+
+  &__container {
+    width: 50%;
+    text-align: center;
+    background: url("../images/overlay/bg.png");
+    background-position: center top;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+  }
+
+  &__h1 {
+    @extend .text-portfolio;
+    @extend .text-gradient;
+    margin: 0.625rem 0 1.25rem;
+  }
+
+  &__img {
+    margin-bottom: 1.875rem;
+  }
+}

@@ -1,0 +1,46 @@
+#landingTestimonial {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .testimonial {
+    &__blurbHolder {
+      position: relative;
+
+      &::before {
+        content: "";
+        background-image: url("../images/projects/quote.svg");
+        position: absolute;
+        top: -4.25rem;
+        left: -2.25rem;
+        width: 4.125rem;
+        height: 2.75rem;
+      }
+    }
+
+    &__p {
+      margin: 0 0 3.5rem;
+    }
+
+    &__image {
+      height: 4.5rem;
+      width: 4.5rem;
+      object-fit: scale-down;
+      object-position: center;
+
+      margin-right: 2rem;
+    }
+
+    &__title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__name {
+      margin: 0;
+    }
+  }
+}

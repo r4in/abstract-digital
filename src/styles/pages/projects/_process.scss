@@ -1,0 +1,33 @@
+#projectsProcess {
+  .process {
+    &__h3 {
+      @extend .text-white;
+      font-weight: 600;
+      margin: 0.625rem 0 2.5rem;
+    }
+
+    &__h4 {
+      @extend .text-white;
+      margin: 0 0 1.625rem;
+    }
+
+    &__images {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin: 5.625rem 0;
+    }
+
+    &__image {
+      width: calc(33% - 2.25rem);
+
+      &--low {
+        margin-top: 4.375rem;
+      }
+
+      &--lowest {
+        margin-top: 8.75rem;
+      }
+    }
+  }
+}

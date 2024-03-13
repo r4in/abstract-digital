@@ -1,0 +1,22 @@
+.filledButton {
+  background: linear-gradient(90deg, #c45af4 0%, #7163de 33%, #c45af4 100%);
+  background-size: 300% auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-right: 1.25rem;
+  transition: background-position 0.2s ease-in-out;
+  cursor: pointer;
+  border: 0;
+  font-weight: 600;
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+    background-position: -66%;
+  }
+
+  &:active {
+    background-position: -100%;
+  }
+}

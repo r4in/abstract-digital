@@ -1,0 +1,159 @@
+.overlay {
+  height: 0;
+  width: 0;
+
+  &__logo--landing {
+    display: none;
+    cursor: pointer;
+  }
+
+  &__sides {
+    margin: 3.125rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    height: calc(100vh - 6.25rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--left {
+      left: 3.125rem;
+      align-items: flex-start;
+      z-index: 200;
+    }
+
+    &--right {
+      right: 3.125rem;
+      align-items: flex-end;
+    }
+  }
+
+  &__scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__textHolder {
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+  }
+
+  &__text {
+    @extend .text-scroll;
+    color: var(--color-white);
+    opacity: 0.4;
+    transform: rotate(-90deg) translate(-37%, 140%);
+    display: block;
+
+    &--backToTop {
+      @extend .overlay__text;
+      transform: rotate(-90deg) translate(-115%, 140%);
+    }
+  }
+
+  &__arrow {
+    margin-top: 1.875rem;
+  }
+
+  &__hireText {
+    @extend .text-button2;
+    @extend .text-white;
+    transition: color 0.1s ease-in-out;
+  }
+
+  &__hire {
+    border: solid 0.125rem var(--color-white);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.1s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--color-white);
+
+      .overlay__hireText {
+        color: var(--color-bg);
+      }
+    }
+  }
+
+  &__active {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0.0625rem;
+    transform: translateY(0);
+    z-index: 1;
+  }
+
+  &__pageNumber {
+    @extend .text-pageNumber;
+    @extend .text-white;
+    margin-right: 0.625rem;
+    display: flex;
+    height: 17px;
+    line-height: 17px;
+    overflow: hidden;
+
+    &--left,
+    &--middle,
+    &--right {
+      width: 1ch;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__scrollbar {
+    height: 32vh;
+    position: relative;
+    display: none;
+  }
+
+  &__activeBar {
+    height: calc(32vh / 10);
+    width: 0.125rem;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 0.25rem;
+  }
+
+  &__bar {
+    @extend .overlay__activeBar;
+    background-color: var(--color-white20);
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  &__hitboxes {
+    position: absolute;
+    height: 100%;
+    width: calc(3ch + 0.75rem);
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  &__hitbox {
+    height: calc(100% / 10);
+    width: 100%;
+  }
+
+  &__dribbble {
+    path {
+      transition: 0.1s ease fill;
+    }
+
+    &:hover path {
+      fill: #ea4c89;
+    }
+  }
+}

@@ -1,0 +1,188 @@
+.shapes {
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../images/parallax-background.svg");
+  background-size: 100%;
+  pointer-events: none;
+
+  &--landing {
+    z-index: 90;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-image: url("../images/parallax-background.svg");
+    background-size: 100%;
+    pointer-events: none;
+  }
+
+  &__container {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    z-index: 90;
+    pointer-events: none;
+
+    overflow: hidden;
+  }
+
+  &__trigger {
+    overflow: hidden;
+  }
+}
+
+.fullpage {
+  position: absolute;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  width: 100%;
+
+  &__window {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+.reveal {
+  &__container {
+    overflow: hidden;
+  }
+}
+
+span {
+  display: inline-block;
+}
+
+.lottie {
+  &__heroHolder {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  &__hero {
+    position: absolute;
+    width: 80%;
+    z-index: -1;
+    opacity: 0.1;
+
+    &--spenmo {
+      @extend .lottie__hero;
+      z-index: 0;
+      top: 10%;
+      opacity: 0.5;
+      width: 70%;
+
+      @include breakpoint("lg") {
+        top: 7%;
+        opacity: 0.4;
+      }
+
+      @include breakpoint("xl") {
+        top: -2%;
+        opacity: 0.3;
+      }
+    }
+
+    &--diab {
+      @extend .lottie__hero;
+      width: 110%;
+      z-index: 0;
+      top: 10%;
+      opacity: 0.6;
+
+      @include breakpoint("lg") {
+        top: 7%;
+        opacity: 0.5;
+      }
+
+      @include breakpoint("xl") {
+        top: 2%;
+        opacity: 0.4;
+      }
+    }
+
+    &--tightrope {
+      @extend .lottie__hero;
+      z-index: 0;
+      width: 150%;
+      top: 10%;
+      opacity: 0.6;
+
+      @include breakpoint("lg") {
+        top: 7%;
+        opacity: 0.5;
+      }
+
+      @include breakpoint("xl") {
+        top: 5%;
+        opacity: 0.4;
+      }
+    }
+
+    &--flash {
+      @extend .lottie__hero;
+      z-index: 0;
+      top: 10%;
+      opacity: 0.6;
+      width: 110%;
+
+      @include breakpoint("lg") {
+        top: 7%;
+        opacity: 0.5;
+      }
+
+      @include breakpoint("xl") {
+        top: 5%;
+        opacity: 0.4;
+      }
+    }
+
+    &--portfolio {
+      @extend .lottie__hero;
+    }
+
+    &--sprint {
+      @extend .lottie__hero;
+      position: unset;
+      width: 110%;
+      transform: translateX(-5%);
+    }
+
+    &--about {
+      @extend .lottie__hero;
+      padding-bottom: 5%;
+    }
+  }
+}
+
+.smoothScroll {
+  &__wrapper {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__container {
+    position: absolute;
+    overflow: hidden;
+    z-index: 10;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    width: 100%;
+  }
+}

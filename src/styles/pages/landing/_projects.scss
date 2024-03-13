@@ -1,0 +1,230 @@
+.landingProjects {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .projects {
+    &__row {
+      @include breakpoint-down("xl") {
+        align-items: center;
+      }
+    }
+    &__company {
+      @extend .text-label;
+      @extend .text-brand;
+      margin-right: 1.25rem;
+    }
+
+    &__h2 {
+      @extend .text-white;
+      margin: 0.75rem 0 1rem;
+    }
+
+    &__p {
+      @extend .text-body1;
+      @extend .text-white;
+      margin-bottom: 1.5rem;
+    }
+
+    &__backed {
+      margin-bottom: 3rem;
+    }
+
+    &__images {
+      position: relative;
+      @include breakpoint-down("xl") {
+        margin-left: 4rem;
+        height: 18rem;
+      }
+      @include breakpoint-down("lg") {
+        margin-left: 8.333333%;
+        height: 13.75rem;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+    }
+
+    &__image {
+      &--spenmo {
+        // Card
+        &1 {
+          position: absolute;
+          right: 15%;
+          bottom: 3%;
+          width: 36%;
+          z-index: -5;
+        }
+
+        // Triangle
+        &2 {
+          position: absolute;
+          bottom: -8%;
+          left: 12%;
+          width: 8%;
+        }
+
+        // Circle
+        &3 {
+          position: absolute;
+          top: 14%;
+          left: -7%;
+          width: 10%;
+        }
+
+        // Phone
+        &4 {
+          position: absolute;
+          bottom: -0.5%;
+          right: 0;
+          width: 94%;
+        }
+
+        // S
+        &5 {
+          position: absolute;
+          bottom: 26%;
+          left: 10%;
+          width: 50%;
+          z-index: -4;
+        }
+      }
+
+      &--tightrope {
+        // Circle
+        &1 {
+          position: absolute;
+          right: 3%;
+          top: 2%;
+          width: 4%;
+          z-index: 1;
+        }
+
+        // Tablet
+        &2 {
+          position: absolute;
+          top: -21%;
+          left: 0;
+          width: 93%;
+        }
+
+        // Phone
+        &3 {
+          position: absolute;
+          bottom: -19%;
+          left: 38%;
+          width: 32%;
+          z-index: 1;
+        }
+
+        // Zigzag
+        &4 {
+          position: absolute;
+          bottom: -38%;
+          left: 6%;
+          width: 14%;
+        }
+
+        // T
+        &5 {
+          position: absolute;
+          top: 11%;
+          right: 0;
+          width: 47%;
+        }
+      }
+
+      &--diab {
+        // Circle
+        &1 {
+          position: absolute;
+          left: 32%;
+          top: 0;
+          width: 3%;
+        }
+
+        // Leaf Right
+        &2 {
+          position: absolute;
+          bottom: -40%;
+          right: 24%;
+          width: 20%;
+          z-index: 2;
+        }
+
+        // D
+        &3 {
+          position: absolute;
+          top: -37%;
+          right: -6%;
+          width: 61%;
+        }
+
+        // Leaf left
+        &4 {
+          position: absolute;
+          top: 50%;
+          left: -9%;
+          width: 7%;
+        }
+
+        // Laptop
+        &5 {
+          position: absolute;
+          bottom: -20%;
+          left: -11%;
+          width: 116%;
+        }
+      }
+
+      &--flash {
+        &1 {
+          position: absolute;
+          width: 24%;
+          right: 9%;
+          bottom: -17%;
+        }
+
+        &2 {
+          position: absolute;
+          width: 90%;
+          left: 7%;
+          bottom: -17%;
+        }
+
+        &3 {
+          position: absolute;
+          width: 50%;
+          left: 5%;
+          top: 6%;
+        }
+
+        &4 {
+          position: absolute;
+          width: 13%;
+          left: 12%;
+          top: -32%;
+        }
+
+        &5 {
+          position: absolute;
+          width: 51%;
+          top: -15%;
+          right: 18%;
+        }
+
+        &6 {
+          position: absolute;
+          width: 9%;
+          right: 0;
+          top: 15%;
+        }
+      }
+    }
+  }
+}

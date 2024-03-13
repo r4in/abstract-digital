@@ -1,0 +1,44 @@
+.nextStop {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__h1 {
+    @extend .text-white;
+    margin: 1rem 0 0;
+    transition: color 0.1s ease-in-out;
+  }
+
+  &__label {
+    @extend .text-label;
+    @extend .text-primary;
+    transition: transform 0.1s ease-in-out color 0.1s ease-in-out;
+    display: block;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      .nextStop__h1 {
+        color: var(--color-primary);
+      }
+    }
+
+    &:active {
+      .nextStop__label,
+      .nextStop__h1 {
+        color: var(--color-secondary);
+      }
+
+      .nextStop__h1 {
+        transition-delay: 0.05s;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.blurb {
+  padding: 3.125rem 1.875rem;
+
+  &--bordered {
+    border-top: solid 0.0625rem var(--color-border);
+    border-bottom: solid 0.0625rem var(--color-border);
+  }
+
+  &--small {
+    padding: 3.125rem 6.75rem;
+  }
+
+  &__text {
+    @extend .text-body2;
+    @extend .text-white;
+    text-align: center;
+  }
+}

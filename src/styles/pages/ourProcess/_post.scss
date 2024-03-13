@@ -1,0 +1,68 @@
+#ourProcessPost {
+  margin: 9.375rem auto;
+
+  .post {
+    &__h3 {
+      @extend .text-white;
+      font-weight: 600;
+      margin: 0.625rem 0 1.875rem;
+    }
+
+    &__p {
+      @extend .text-body1;
+      @extend .text-white;
+      margin-top: 2.5rem;
+    }
+
+    &__h4 {
+      @extend .text-white;
+      margin: 0 0 1.625rem;
+    }
+
+    &__image {
+      position: absolute;
+
+      &--1 {
+        @extend .post__image;
+        width: 32%;
+        left: 0;
+        bottom: 0;
+      }
+
+      &--2 {
+        @extend .post__image;
+        width: 32%;
+        left: 14%;
+        top: 4%;
+      }
+
+      &--3 {
+        @extend .post__image;
+        width: 52%;
+        left: 17%;
+        top: 15%;
+        z-index: 3;
+      }
+
+      &--4 {
+        @extend .post__image;
+        width: 32%;
+        right: 10%;
+        top: 0;
+      }
+
+      &--5 {
+        @extend .post__image;
+        width: 38%;
+        right: 0;
+        bottom: 10%;
+      }
+    }
+
+    &__imageHolder {
+      position: relative;
+      padding-bottom: 50%;
+      margin-top: 6.25rem;
+    }
+  }
+}

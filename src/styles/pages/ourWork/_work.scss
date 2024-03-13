@@ -1,0 +1,92 @@
+#ourWorkWorks {
+  width: 100%;
+  margin-bottom: 9.375rem;
+  display: flex;
+  justify-content: center;
+
+  .work {
+    text-decoration: none;
+    position: relative;
+    display: block;
+
+    &:hover,
+    &:focus {
+      outline: 0;
+      .button {
+        opacity: 1;
+        transform: translateY(2.4rem);
+      }
+    }
+
+    &:active {
+      outline: 0;
+      .button {
+        color: var(--color-brandLight);
+      }
+    }
+
+    &__content {
+      border-radius: 0.75rem;
+      height: 20rem;
+      display: flex;
+      margin-bottom: 1.875rem;
+      background-color: var(--color-brandLight);
+      overflow: hidden;
+      position: relative;
+
+      @include breakpoint("lg") {
+        height: 28.75rem;
+        margin-bottom: 3.125rem;
+      }
+    }
+
+    &__half {
+      width: 15rem;
+
+      @include breakpoint("lg") {
+        width: 21.25rem;
+      }
+
+      &--right {
+        @extend .work__half;
+        margin: 10rem 0 0 1.875rem;
+
+        @include breakpoint("lg") {
+          margin-left: 3.125rem;
+        }
+      }
+    }
+
+    &__imageHolder {
+      position: absolute;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 0 0 0 0.75rem;
+
+      &--top {
+        @extend .work__imageHolder;
+        top: 0;
+      }
+
+      &--bottom {
+        @extend .work__imageHolder;
+        bottom: 0;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__h4 {
+      @extend .text-white;
+      padding: 1.875rem;
+      margin: 0;
+
+      &--bottom {
+        @extend .work__h4;
+        align-self: flex-end;
+      }
+    }
+  }
+}

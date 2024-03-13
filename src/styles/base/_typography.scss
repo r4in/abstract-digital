@@ -1,0 +1,292 @@
+// font-face rules. Do not forget to include font-display: swap in all rules
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Source+Serif+Pro&display=swap");
+
+// Set backup font faces
+$Poppins: "Poppins", Frutiger, "Frutiger Linotype", Univers, Calibri,
+  "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+  "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+  Helvetica, Arial, sans-serif;
+$SourceSerifPro: "Source Serif Pro", Cambria, "Hoefler Text", Utopia,
+  "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman",
+  serif;
+
+// Helper classes to extend from
+%poppinsBold {
+  font-family: $Poppins;
+  font-weight: 700;
+}
+
+%poppinsSemiBold {
+  font-family: $Poppins;
+  font-weight: 600;
+}
+
+%poppinsRegular {
+  font-family: $Poppins;
+  font-weight: 400;
+}
+
+%poppinsLight {
+  font-family: $Poppins;
+  font-weight: 300;
+}
+
+%sourceSerifRegular {
+  font-family: $SourceSerifPro;
+  font-weight: 400;
+}
+
+// Overrides all default text styles
+
+h1 {
+  @extend %poppinsBold;
+  font-size: 2.5rem;
+  line-height: 1.3em;
+  @include breakpoint("xl") {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  @extend %poppinsBold;
+  font-size: 2.25rem;
+  line-height: 1.3em;
+  @include breakpoint("xl") {
+    font-size: 2.625rem;
+  }
+}
+
+h3 {
+  @extend %poppinsBold;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.3em;
+  @include breakpoint("xl") {
+    font-size: 2.25rem;
+  }
+}
+
+h4 {
+  @extend %poppinsBold;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  letter-spacing: -0.02em;
+}
+
+h5 {
+  @extend %poppinsBold;
+  font-size: 1.125rem;
+  line-height: 1em;
+  letter-spacing: -0.02em;
+  @include breakpoint("xl") {
+    font-size: 1.3125rem;
+  }
+}
+
+h6 {
+  @extend %poppinsSemiBold;
+  font-size: 0.875rem;
+  line-height: 1.3em;
+}
+
+.text-body1 {
+  @extend %sourceSerifRegular;
+  font-size: 1rem;
+  line-height: 1.8em;
+  margin-bottom: 1rem;
+  @include breakpoint("xl") {
+    font-size: 1.125rem;
+  }
+}
+
+.text-body2 {
+  @extend %sourceSerifRegular;
+  font-size: 1.3125rem;
+  line-height: 1.7em;
+}
+
+.text-label {
+  @extend %poppinsSemiBold;
+  font-size: 0.75rem;
+  line-height: 1.3em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  @include breakpoint("xl") {
+    font-size: 0.8125rem;
+  }
+}
+
+.text-pageNumber {
+  @extend .text-label;
+  letter-spacing: 0.08em;
+}
+.text-backed {
+  @extend %poppinsSemiBold;
+  font-size: 0.6875rem;
+  line-height: 1.3em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.text-button1 {
+  @extend %poppinsBold;
+  font-size: 1rem;
+  line-height: 1em;
+  @include breakpoint("xl") {
+    font-size: 1.125rem;
+  }
+}
+
+.text-button2 {
+  @extend %poppinsRegular;
+  font-size: 1rem;
+  line-height: 1em;
+  font-weight: 600;
+}
+
+.text-button3 {
+  @extend %poppinsBold;
+  font-size: 0.875rem;
+}
+
+.text-scroll {
+  @extend %poppinsLight;
+  font-size: 0.875rem;
+  line-height: 1.4em;
+}
+
+.text-start {
+  @extend %poppinsRegular;
+  font-size: 0.875rem;
+  line-height: 1.4em;
+}
+
+.text-contact {
+  @extend %poppinsRegular;
+  font-size: 0.875rem;
+  line-height: 1.7em;
+}
+
+.text-nextStop {
+  @extend %poppinsBold;
+  font-size: 3.75rem;
+  line-height: 1em;
+  letter-spacing: -0.02em;
+  @include breakpoint("xl") {
+    font-size: 4.5rem;
+  }
+}
+
+.text-portfolio {
+  @extend %poppinsBold;
+  font-size: 4rem;
+  line-height: 1em;
+  letter-spacing: -0.02em;
+}
+
+.text-clientInfo {
+  @extend %poppinsRegular;
+  font-size: 1rem;
+  line-height: 1.7em;
+}
+
+.text-position {
+  @extend %poppinsRegular;
+  font-size: 0.75rem;
+  line-height: 1.7em;
+}
+
+.text-portfolioHead {
+  @extend %sourceSerifRegular;
+  font-size: 1.5rem;
+  line-height: 1.7em;
+}
+
+.text-step {
+  @extend %poppinsBold;
+  font-size: 1rem;
+  line-height: 1.5em;
+  letter-spacing: -0.02em;
+  @include breakpoint("xl") {
+    font-size: 1.125rem;
+  }
+}
+
+.text-day {
+  @extend %poppinsBold;
+  font-size: 2rem;
+  line-height: 1em;
+  letter-spacing: -0.01em;
+}
+
+.text-lineBefore {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &:before {
+    position: absolute;
+    left: -2.375rem;
+    content: "";
+    width: 1.875rem;
+    height: 0.0625rem;
+    background-color: var(--color-white20);
+  }
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-white20 {
+  color: var(--color-white20);
+}
+
+.text-white30 {
+  color: var(--color-white30);
+}
+
+.text-white40 {
+  color: var(--color-white40);
+}
+
+.text-white50 {
+  color: var(--color-white50);
+}
+
+.text-white60 {
+  color: var(--color-white60);
+}
+
+.text-white75 {
+  color: var(--color-white75);
+}
+
+.text-black20 {
+  color: var(--color-black20);
+}
+
+.text-brand {
+  color: var(--color-brand, var(--color-primary));
+}
+
+.text-gradient {
+  /* stylelint-disable-next-line */
+  background: -webkit-linear-gradient(
+    0deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+  background: -o-gradient(transparent, transparent);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--color-primary);
+}

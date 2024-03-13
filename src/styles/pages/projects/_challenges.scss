@@ -1,0 +1,127 @@
+#projectsChallenge {
+  margin: 9.375rem 0;
+
+  .challenge {
+    &__h2 {
+      @extend .text-white;
+      font-weight: 600;
+      margin: 0.625rem 0 1.875rem;
+    }
+
+    &__p {
+      @extend .text-body1;
+      @extend .text-white;
+      margin-top: 2.5rem;
+    }
+
+    &__clientInfo {
+      @extend .text-clientInfo;
+      @extend .text-white;
+      margin: 0.75rem 0 1.875rem;
+    }
+
+    &__clientList {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0.75rem 0 1.875rem;
+
+      > li {
+        @extend .text-clientInfo;
+        @extend .text-white;
+        line-height: 2rem;
+      }
+    }
+
+    &__images {
+      margin: 5.625rem 5.625rem 7.5rem;
+    }
+
+    &__imageHolder {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    &__image {
+      width: 100%;
+
+      &--spenmo {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+      &--diab1 {
+        width: calc(70% - 2rem);
+        margin-right: 4rem;
+      }
+
+      &--diab2 {
+        width: calc(30% - 2rem);
+        margin-bottom: 2.25rem;
+      }
+
+      &--tightrope1 {
+        width: calc(45% - 1.875rem);
+        transform: translateY(-8.75rem);
+      }
+
+      &--tightrope2 {
+        width: calc(55% - 1.875rem);
+      }
+
+      &--flash1 {
+        width: calc(40% - 0.9375rem);
+      }
+
+      &--flash2 {
+        width: 100%;
+        margin-bottom: 3.75rem;
+      }
+
+      &--flash3 {
+        width: 65%;
+      }
+    }
+
+    &__imageGroup {
+      width: calc(60% - 0.9375rem);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 22%;
+        padding-bottom: 22%;
+        top: -10%;
+        left: -11%;
+        background: url("../images/projects/flash/challenge/4.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: 5;
+      }
+    }
+
+    &__blurbHolder {
+      position: relative;
+
+      &::before {
+        content: "";
+        background-image: url("../images/projects/quote.svg");
+        position: absolute;
+        top: -2.25rem;
+        left: -2.25rem;
+        width: 4.125rem;
+        height: 2.75rem;
+      }
+
+      &--noQuote {
+        @extend .challenge__blurbHolder;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

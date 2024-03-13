@@ -1,0 +1,14 @@
+#ourProcessHero {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .hero {
+    &__h1 {
+      @extend .text-portfolio;
+      @extend .text-gradient;
+    }
+  }
+}

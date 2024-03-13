@@ -1,0 +1,44 @@
+// Holds SCSS Mixins
+@mixin breakpoint($class) {
+  /* stylelint-disable block-closing-brace-newline-after */
+  @if $class == sm {
+    @media only screen and (min-width: 576px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $class == xl {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg, xl";
+  }
+}
+@mixin breakpoint-down($class) {
+  @if $class == sm {
+    @media only screen and (max-width: 575px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media only screen and (max-width: 991px) {
+      @content;
+    }
+  } @else if $class == xl {
+    @media only screen and (max-width: 1199px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg, xl";
+  }
+}

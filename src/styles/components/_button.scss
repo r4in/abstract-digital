@@ -1,0 +1,133 @@
+.button {
+  @extend .text-button1;
+  @extend .text-primary;
+  text-decoration: none;
+  border: 0;
+  padding: 0;
+  transition: color 0.1s ease-in-out;
+  display: inline-block;
+  overflow: visible;
+  cursor: pointer;
+
+  &__image {
+    margin-left: 1rem;
+    transition: transform 0.1s ease-in-out;
+
+    path {
+      transition: stroke 0.1s ease-in-out;
+      stroke: currentColor;
+    }
+
+    &--reversed {
+      margin: 0 1rem 0 0;
+      transform: scaleX(-1);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    color: var(--color-brand, var(--color-secondary));
+
+    .button__image {
+      transform: translateX(0.5rem);
+
+      &--reversed {
+        transform: translateX(-0.5rem) scaleX(-1);
+      }
+    }
+  }
+
+  &:active {
+    outline: none;
+
+    .button__image {
+      transform: translateX(1rem);
+
+      &--reversed {
+        transform: translateX(-1rem) scaleX(-1);
+      }
+    }
+  }
+
+  &--white40 {
+    @extend .text-button2;
+    @extend .text-white40;
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand, var(--color-primary));
+    }
+  }
+
+  &--secondary {
+    &:hover,
+    &:focus {
+      color: var(--color-secondary);
+    }
+  }
+
+  &--work {
+    position: absolute;
+    bottom: 0.3125rem;
+    right: 0;
+    padding-top: 1.25rem;
+    z-index: -1;
+    @extend .text-button3;
+    @extend .text-white;
+    transition: transform 0.1s ease-in-out, color 0.1s ease-in-out;
+  }
+
+  &--nav {
+    @extend .text-white;
+
+    &:hover,
+    &:focus {
+      color: var(--color-primary);
+    }
+
+    .button__image path {
+      stroke: var(--color-primary);
+    }
+  }
+
+  &__hover {
+    &:hover,
+    &:focus {
+      outline: none;
+      .button {
+        outline: none;
+
+        color: var(--color-brand, var(--color-secondary));
+
+        .button__image {
+          transform: translateX(0.5rem);
+
+          &--reversed {
+            transform: translateX(-0.5rem) scaleX(-1);
+          }
+        }
+      }
+
+      .button--white40 {
+        color: var(--color-brand, var(--color-primary));
+      }
+    }
+
+    &:active {
+      outline: none;
+      .button,
+      .button--white40 {
+        outline: none;
+        .button__image {
+          transform: translateX(1rem);
+
+          &--reversed {
+            transform: translateX(-1rem) scaleX(-1);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+#projectsNav {
+  background-color: var(--color-bgDark);
+  padding: 8.75rem 0 10rem;
+  margin-top: 15.3125rem; //FIXME
+
+  .nav {
+    width: calc(50% - 4.0625rem);
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 50%;
+    &__holder {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &.brand-tightrope {
+      background-image: url("../images/projects/tightrope/next.png");
+    }
+
+    &.brand-diab {
+      background-image: url("../images/projects/diab/next.png");
+    }
+
+    &.brand-spenmo {
+      background-image: url("../images/projects/spenmo/next.png");
+    }
+
+    &.brand-flash {
+      background-image: url("../images/projects/flash/next.png");
+    }
+
+    &__h2 {
+      @extend .text-white;
+      margin: 0.8125rem 0 1.125rem;
+    }
+  }
+}

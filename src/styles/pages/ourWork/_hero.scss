@@ -1,0 +1,15 @@
+#ourWorkHero {
+  min-height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero {
+    &__h1 {
+      @extend .text-portfolioHead;
+      @extend .text-white;
+      width: 50%;
+      text-align: center;
+    }
+  }
+}

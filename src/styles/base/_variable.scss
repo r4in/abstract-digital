@@ -1,0 +1,66 @@
+// Enter all variables here. Use default css variables rather than scss variables:
+// https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables
+:root {
+  // -- Colors -- //
+  --color-primary: #c45af4;
+  --color-secondary: #7263df;
+
+  // Whites
+  --color-white: #fff;
+  --color-white20: #4b4b4d;
+  --color-white30: #616163;
+  --color-white40: #52525b;
+  --color-white50: #818188;
+  --color-white60: #a5a5a6;
+  --color-white75: #b2b2b7;
+
+  // Grays
+  --color-gray: #2c2c2f;
+  --color-bg: #1e1e20;
+  --color-bgDark: #141416;
+  --color-black: #000;
+  --color-black20: rgba(0, 0, 0, 0.2);
+  --color-border: #2e2e30;
+
+  // Spenmo
+  --color-spenmo: #f28045;
+  --color-spenmoLight: #ff8e31;
+
+  // Tightrope
+  --color-tightrope: #58bcbc;
+  --color-tightropeLight: #3be4e4;
+
+  // Diab
+  --color-diab: #3cc823;
+  --color-diabLight: #3be47f;
+
+  // Flash
+  --color-flash: #f9cf2f;
+
+  --color-gradient: linear-gradient(90deg, #c45af4 0%, #7163de 100%);
+}
+
+.brand-spenmo {
+  --color-brand: var(--color-spenmo);
+  --color-brandLight: var(--color-spenmoLight);
+}
+
+.brand-tightrope {
+  --color-brand: var(--color-tightrope);
+  --color-brandLight: var(--color-tightropeLight);
+}
+
+.brand-diab {
+  --color-brand: var(--color-diab);
+  --color-brandLight: var(--color-diabLight);
+}
+
+.brand-abstract {
+  --color-brand: var(--color-primary);
+  --color-brandLight: var(--color-secondary);
+}
+
+.brand-flash {
+  --color-brand: var(--color-flash);
+  --color-brandLight: var(--color-flash);
+}

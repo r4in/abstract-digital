@@ -1,0 +1,47 @@
+#landingHero {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero {
+    &__background {
+      background: url("../images/landing/hero.png");
+      background-repeat: no-repeat;
+      background-size: 40%;
+      background-position: center center;
+    }
+    &__holder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 6.65rem;
+    }
+
+    &__h1 {
+      @extend .text-white;
+      margin-bottom: 2.5rem;
+    }
+
+    &__arrow {
+      margin-top: 6.25rem;
+      transition: transform 0.1s ease-in-out;
+      border: none;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        transform: translateY(0.5rem);
+      }
+
+      &:active {
+        outline: none;
+        transform: translateY(1rem);
+      }
+    }
+  }
+}

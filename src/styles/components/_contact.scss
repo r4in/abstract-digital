@@ -1,0 +1,28 @@
+.contact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 140;
+  background-color: var(--color-bgDark);
+  background-image: url("../images/contact-background.png");
+  background-position: right center;
+  background-size: auto 75%;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  display: none;
+  align-items: center;
+
+  &__h2 {
+    @extend .text-white;
+    margin: 1.25rem 0;
+  }
+
+  &__p {
+    @extend .text-body1;
+    @extend .text-white75;
+    margin: 1.25rem 0 2.5rem;
+  }
+}

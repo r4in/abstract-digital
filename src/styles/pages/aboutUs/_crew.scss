@@ -1,0 +1,43 @@
+#aboutUsCrew {
+  margin-bottom: 8.75rem;
+
+  .crew {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    &__h2 {
+      @extend .text-white;
+      margin: 1.25rem 0 3.125rem;
+    }
+
+    &__crew {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1.875rem;
+    }
+
+    &__indi {
+      width: 100%;
+      display: flex;
+      align-items: flex-center;
+      justify-content: flex-start;
+      flex-direction: column;
+      @include breakpoint(lg) {
+        align-items: center;
+      }
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__h6 {
+      @extend .text-clientInfo;
+      @extend .text-white;
+      margin: 1rem 0 0;
+    }
+  }
+}
