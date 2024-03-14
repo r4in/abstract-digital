@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.abstract.ph/sitemap.xml
+Host: https://www.abstract.ph
