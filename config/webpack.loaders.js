@@ -1,20 +1,20 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const config = require('./site.config');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const config = require("./site.config");
 
 // Define common loader constants
-const sourceMap = config.env !== 'production';
+const sourceMap = config.env !== "production";
 
 // HTML loaders
 const html = {
   test: /\.(html)$/,
   use: [
     {
-      loader: 'html-loader-srcset',
+      loader: "html-loader-srcset",
       options: {
-        interpolate: true,
-      },
-    },
-  ],
+        interpolate: true
+      }
+    }
+  ]
 };
 
 // Javascript loaders
@@ -23,72 +23,71 @@ const js = {
   exclude: /node_modules/,
   use: [
     {
-      loader: 'babel-loader',
+      loader: "babel-loader",
       options: {
-        presets: ['@babel/preset-env'],
-      },
-    },
-    'eslint-loader',
-  ],
+        presets: ["@babel/preset-env"]
+      }
+    }
+  ]
 };
 
 // Style loaders
 const styleLoader = {
-  loader: 'style-loader',
+  loader: "style-loader"
 };
 
 const cssLoader = {
-  loader: 'css-loader',
+  loader: "css-loader",
   options: {
-    sourceMap,
-  },
+    sourceMap
+  }
 };
 
 const postcssLoader = {
-  loader: 'postcss-loader',
+  loader: "postcss-loader",
   options: {
-    plugins: [require('autoprefixer')()],
-    sourceMap,
-  },
+    plugins: [require("autoprefixer")()],
+    sourceMap
+  }
 };
 
 const css = {
   test: /\.css$/,
   use: [
-    config.env === 'production' ? MiniCssExtractPlugin.loader : styleLoader,
+    config.env === "production" ? MiniCssExtractPlugin.loader : styleLoader,
     cssLoader,
-    postcssLoader,
-  ],
+    postcssLoader
+  ]
 };
 
 const sass = {
   test: /\.s[c|a]ss$/,
   use: [
-    config.env === 'production' ? MiniCssExtractPlugin.loader : styleLoader,
+    config.env === "production" ? MiniCssExtractPlugin.loader : styleLoader,
     cssLoader,
     postcssLoader,
     {
-      loader: 'sass-loader',
+      loader: "sass-loader",
       options: {
-        sourceMap,
-      },
-    },
-  ],
+        sourceMap
+      }
+    }
+  ]
 };
 
 const less = {
   test: /\.less$/,
   use: [
-    config.env === 'production' ? MiniCssExtractPlugin.loader : styleLoader,
+    config.env === "production" ? MiniCssExtractPlugin.loader : styleLoader,
     cssLoader,
     postcssLoader,
     {
-      loader: 'less-loader',
+      loader: "less-loader",
       options: {
-        sourceMap,
-      },
-    },
-  ],
+        sourceMap
+      }
+    }
+  ]
 };
 
 // Image loaders
@@ -117,9 +116,9 @@ const images = {
   test: /\.(gif|png|jpe?g|svg)$/i,
   exclude: /fonts/,
   use: [
-    'file-loader?name=images/[name].[hash].[ext]',
+    "file-loader?name=images/[name].[hash].[ext]"
     // config.env === 'production' ? imageLoader : null,
-  ].filter(Boolean),
+  ].filter(Boolean)
 };
 
 // Font loaders
@@ -128,13 +127,13 @@ const fonts = {
   exclude: /images/,
   use: [
     {
-      loader: 'file-loader',
+      loader: "file-loader",
       query: {
-        name: '[name].[hash].[ext]',
-        outputPath: 'fonts/',
-      },
-    },
-  ],
+        name: "[name].[hash].[ext]",
+        outputPath: "fonts/"
+      }
+    }
+  ]
 };
 
 // Video loaders
@@ -142,13 +141,13 @@ const videos = {
   test: /\.(mp4|webm)$/,
   use: [
     {
-      loader: 'file-loader',
+      loader: "file-loader",
       query: {
-        name: '[name].[ext]',
-        outputPath: 'videos/',
-      },
-    },
-  ],
+        name: "[name].[ext]",
+        outputPath: "videos/"
+      }
+    }
+  ]
 };
 
 module.exports = [html, js, css, sass, less, images, fonts, videos];
